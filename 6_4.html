@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.4</title>
+    <link rel="stylesheet" href="paginas.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <!--PARTE DEL NAV-BAR-->
+
+    <nav>
+        <div class="logo">
+            <a href="equipo.html">Equipo</a>
+        </div>
+       
+            <!--PARTE DEL LAS LISTAS-->
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="">Parcial 1</a>
+                    <ul>
+                        <li><a href="1_1.html">Sistemas de comunicacion</a></li>
+                        <li><a href="2_1.html">Medios de transmision</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Parcial 2</a>
+                    <ul>
+                        <li><a href="3_1.html">Modulacion</a></li>
+                        <li><a href="4_1.html">Tecnicas de conmutacion</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Parcial 3</a>
+                    <ul>
+                        <li><a href="5_1.html">Multiplexacion</a></li>
+                        <li><a href="6_1.html">Dispositivos de comunicacion</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+    </nav>
+
+    <!--FIN DEL NAV-BAR-->
+
+        <!-- Page Header -->
+        <header class="header-6-4">
+            <div>
+                <h1>6.4. Mecanismos de detección y corrección de errores</h1>
+            </div>
+        </header>
+        <!-- End Of Page Header -->
+
+                <!--inicio de la section 1-->
+                <div class="section1_3-3">
+                    <div class="container3">
+                        <div class="info">
+                            <p>Las redes de computadores deben ser capaces de transmitir datos de un dispositivo a otro con cierto nivel de precisión. Para muchas aplicaciones, el sistema debe garantizar que los datos recibidos son iguales a los trasmitidos. Sin embargo, siempre que una señal electromagnética fluye de un punto a otro, está sujeta a interferencias impredecibles debido al calor, el magnetismo y diversas formas de electricidad. <br><br> Esta interferencia puede cambiar la forma o la temporización de la señal. Si la señal transporta datos binarios codificados, tales cambios pueden alterar su significado.</p>
+                            <br><br>
+                            <h1>Tipos de errores</h1>
+                            <p>Los sistemas de comunicación deben tener
+                                mecanismos para detectar y corregir errores que alteren los datos recibidos debido a
+                                múltiples factores de la transmisión.
+                                La detección y corrección de errores se implementa bien en el nivel de enlace de datos o
+                                bien en el nivel de transporte del modelo OSI.
+                                <br><br>
+                                Interferencias, calor, magnetismo, etc, influyen en una señal electromagnética, esos
+                                factores pueden alterar la forma o temporalidad de una señal. Si la señal transporta datos
+                                digitales, los cambios pueden modificar el significado de los datos.
+                            </p>
+                        </div>
+        
+                        <div class="img-2-1">
+                            <img src="deteccion.jpg" alt="">
+                        </div>
+                    </div>
+        
+                </div>
+                <!--fin de la section 1-->
+        
+                <!--inicio de la section 2-->
+                <div class="section1_3-4">
+                    <div class="container4">
+                        <div class="img-2-3-1">
+                            <img src="error de bit.jpg" alt="">
+                        </div>
+        
+        
+                        <div class="info2">
+                            <h1>Error de bit</h1>
+                            <p>Este término significa que únicamente un bit de una unidad de datos determinada (byte, caracter, paquete, etc.) cambia de 0 a 1 o de 1 a 0 [1][2]. Para comprender el impacto de este cambio, podemos imaginar que cada grupo de 8 bits es un caracter ASCII con un 0 añadido a la izquierda. Un error de bit podría alterar completamente el caracter ASCII enviado (ej. ‘A’: ASCII 65) y en el receptor se obtendría un caracter completamente diferente (ej. ‘I’: ASCII 73).
+                                <br>
+        
+                            </p>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <!--fin de la section 2-->
+        
+                <!--inicio de la section 3-->
+                <div class="section1_3-3">
+                    <div class="container3">
+                        <div class="info">
+                            <h1>Error de ráfaga</h1>
+                            <p>Significa que dos o más bits de la unidad de datos han sido alterados. Es importante notar que los errores de ráfaga no implican que se afecten bits consecutivos. La longitud de la ráfaga se mide desde el primer hasta el último bit incorrecto.
+                                La presencia de errores de ráfaga es más probable en las transmisiones en serie. La duración del ruido es normalmente mayor que la duración del bit, lo que significa que cuando el ruido afecta los datos, afecta un conjunto de bits. El número de bits afectados dependerá de la tasa de datos y de la duración del ruido.
+                                
+                            </p>
+                        </div>
+        
+                        <div class="img-2-1">
+                            <img src="error rafaga.webp" alt="">
+                        </div>
+                    </div>
+        
+                </div>
+                <!--fin de la section 3-->
+        
+        
+                <!--inicio de la section 4-->
+                <div class="section1_3-4">
+                    <div class="container4">
+                        <div class="img-2-3-4">
+                            <img src="REDUNDANCIA-BLOG.jpg" alt="">
+                        </div>
+        
+        
+                        <div class="info2">
+                            <h1>Redundancia</h1>
+                            <p>Una vez que se conocen los tipos de errores que pueden existir, es necesario identificarlos. En un entorno de comunicación de datos no se tendrá una copia de los datos originales que permita comparar los datos recibidos para detectar si hubo errores en la transmisión. En este caso, no habrá forma de detectar si ocurrió un error hasta que se haya decodificado la transmisión y se vea que no tienen sentido los datos recibidos. Si los computadores comprobaran errores de esta forma, sería un proceso muy lento y costoso. Es necesario un mecanismo que sea sencillo y completamente efectivo.
+                                <br>
+                            </p>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <!--fin de la section 4-->
+        
+                <!--inicio de la section 5-->
+                <div class="section1_3-3">
+                    <div class="container3">
+                        <div class="info">
+                            <h1>FEC (Forward Error Correction) Vs. Retransmisión</h1>
+                            <p>Es el mecanismo más frecuente y barato, la VRC se denomina a menudo
+                                verificación de paridad, y se basa en añadir un bit de redundancia, denominado bit
+                                de paridad, al final de cada unidad de datos, de forma que el número total de unos
+                                en la unidad (incluyendo el bit de paridad) sea par, o impar en el caso de la
+                                verificación de paridad impar.
+                            </p>
+                        </div>
+        
+                        <div class="img-2-1">
+                            <img src="retrasmision.gif" alt="">
+                        </div>
+                    </div>
+        
+                </div>
+                <!--fin de la section 5-->
+        
+                <!--inicio de la section 6-->
+                <div class="section1_3-4">
+                    <div class="container4">
+                        <div class="img-2-3-6">
+                            <img src="haming.png" alt="">
+                        </div>
+        
+        
+                        <div class="info2">
+                            <h1>Distancia Hamming Mínima</h1>
+                            <p>
+                                Se llama distancia Hamming mínima a la distancia Hamming más pequeña entre todos los posibles pares de palabras codificadas de un esquema de codificación. Se usa el término dmin para definir la distancia Hamming mínima en un esquema de codificación. Para hallar este valor, se deben encontrar las distancias Hamming entre todas las palabras codificadas del esquema, y se selecciona la más pequeña. 
+        
+                            </p>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <!--fin de la section 6-->
+        
+                <!--inicio de la section 5-->
+                <div class="section1_3-3">
+                    <div class="container3">
+                        <div class="info">
+                            <h1>Corrección de errores con códigos de bloque</h1>
+                           <p>En el caso discutido previamente (detección de errores), el receptor sólo necesita saber que la palabra codificada es inválida para detectar un error. En la corrección de errores, el receptor deberá descubrir la palabra codificada originalmente enviada. La idea principal es la misma que la empleada en la detección de errores, pero el verificador es mucho más complejo.</p>
+                           <br><br>
+                           <h1>Codigos ciclicos</h1>
+                           <br>
+                           <p>Los códigos cíclicos son códigos de bloque que cumplen varias propiedades:
+                            <br><br>
+                            •	Al aplicar la operación XOR sobre dos palabras codificadas válidas, se genera otra palabra codificada válida.
+                            <br><br>
+                            •	Si una palabra codificada válida es rotada en forma cíclica, el resultado es otra palabra codificada válida.
+                            <br><br>
+                            Por ejemplo, si se tiene la palabra codificada 1001101001, y se rota hacia la izquierda de forma cíclica, entonces 0011010011 debe ser una palabra codificada válida 
+                        
+                            <br><br><br>
+                            Por: Selina Yamilet Avendaño Maya
+                            <br>
+                            <p>Referencias:</p>
+                           
+                            <p>http://telecomunicacionesportafolio.blogspot.com/2014/12/64-mecanismos-de-deteccion-y-correccion.html</p> <br>
+
+                            <p>https://u6dispositivosdecomunicacionitstulum.wordpress.com/6-4-mecanismos-de-deteccion-y-correccion-de-errores/</p>
+                                
+                                
+                        </div>
+        
+                        <div class="img-6-4-1">
+                            <img src="Códigos+Cíclicos+(ejemplo)_.jpg" alt="">
+                        </div>
+                    </div>
+        
+                </div>
+                <!--fin de la section 5-->
+        
+                <!--PARTE DEL FOOTER-->
+        
+                <footer>
+        
+                    <div class="container__footer">
+                        <div class="box__footer">
+                            <div class="logo">
+                                <img src="Logotec.jpg" alt="">
+                            </div>
+                            <div class="terms">
+                                <p>Instituto Tecnologico Superior De Poza Rica 2022.</p>
+                            </div>
+                        </div>
+                        <div class="box__footer">
+        
+                        </div>
+        
+                        <div class="box__footer">
+                            <h1>Integrantes</h1>
+                            <p>Daniel Mendez Mendez</p>
+                            <p>Kristen Aislyn Trejo Hernandez</p>
+                            <p>Jose Armando Garcia Perez</p>
+                            <p>Selina Yamilet Avendaño Maya</p>
+                            <p>Jose Angel Lopez Bautista</p>
+                            <p>Brian Ethel Hernandez Huerta</p>
+                        </div>
+        
+                        <div class="box__footer">
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="box__copyright">
+                        <hr>
+                        <p>Todos los derechos reservados © 2022 <b>Daniel Mendez</b></p>
+                    </div>
+                </footer>
+        
+                <!--Fin del footer-->
+        
+
+    </main>
+</body>
+</html>

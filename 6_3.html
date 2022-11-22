@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.3</title>
+    <link rel="stylesheet" href="paginas.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <!--PARTE DEL NAV-BAR-->
+
+    <nav>
+        <div class="logo">
+            <a href="equipo.html">Equipo</a>
+        </div>
+       
+            <!--PARTE DEL LAS LISTAS-->
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="">Parcial 1</a>
+                    <ul>
+                        <li><a href="1_1.html">Sistemas de comunicacion</a></li>
+                        <li><a href="2_1.html">Medios de transmision</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Parcial 2</a>
+                    <ul>
+                        <li><a href="3_1.html">Modulacion</a></li>
+                        <li><a href="4_1.html">Tecnicas de conmutacion</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Parcial 3</a>
+                    <ul>
+                        <li><a href="5_1.html">Multiplexacion</a></li>
+                        <li><a href="6_1.html">Dispositivos de comunicacion</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+    </nav>
+
+    <!--FIN DEL NAV-BAR-->
+        <!-- Page Header -->
+        <header class="header-6-3">
+            <div>
+                <h1>6.3 Protocolos y Estándares</h1>
+            </div>
+        </header>
+        <!-- End Of Page Header -->
+
+        <!--inicio de la section 1-->
+        <div class="container-text5-2">
+            <div class="text5-2">
+                <p>Los protocolos se muestran en capas, donde cada servicio de nivel superior depende de la
+                    funcionalidad definida por los protocolos que se muestran en los niveles inferiores.Los protocolos
+                    de red definen un formato y un conjunto de reglas comunes para intercambiar mensajes entre
+                    dispositivos, algunos de los protocolos de red más comunes son Hypertext Transfer Protocol (HTTP),
+                    el protocolo de control de transmisión (TCP) y el protocolo de Internet (IP).
+
+                <h1>Interacción de protocolos </h1>
+                
+                </p>
+                <p> La comunicación entre un servidor web y un cliente web es un ejemplo de interacción entre varios
+                    protocolos:
+                    <br><br>
+                    1. HTTP: protocolo de aplicación que rige la forma en que interactúan un servidor web y un cliente
+                    web. <br><br>
+                    2. TCP: protocolo de transporte que administra las conversaciones individuales. <br><br>
+                    3. IP: encapsula los segmentos TCP en paquetes, asigna direcciones y entrega al host de destino.
+                    <br><br>
+                    4. Ethernet: permite la comunicación a través de un enlace de datos y la transmisión física de datos
+                    en los medios de red.
+                </p>
+
+            </div>
+        </div>
+        <!--fin de la section 1-->
+
+         <!--inicio de la section 2-->
+  <div class="section1_3-4">
+    <div class="container4">
+        <div class="img-5-1-4">
+            <img src="tpc.jpg" alt="">
+        </div>
+
+
+        <div class="info2">
+            <h1>Protocolo de comunicación de TCP</h1>
+            <p>Cuando envía datos desde un servidor web a un cliente, el procedimiento de encapsulamiento sería el siguiente: </p>
+            <p> •	El servidor web prepara la página de lenguaje de marcado de hipertexto (HTML). El protocolo de capa de aplicación HTTP envía los datos a la capa de transporte
+                <br><br>
+                •	La capa de transporte divide los datos en segmentos e identifica cada uno.
+                <br><br>
+                •	A continuación, se añaden las direcciones IP de origen y de destino, y así se crea un paquete IP.
+              <br><br>
+              •	La información de Ethernet se agrega para crear la trama de Ethernet o el marco de enlace de datos
+              <br><br>
+              •	Esta trama se envía al router más cercano a lo largo de la ruta hacia el cliente web. Cada router agrega información de enlace de datos nueva antes de reenviar el paquete.
+            
+              
+              
+            </p>
+                      
+        </div>
+
+    </div>
+
+</div>
+
+<!--fin de la section 2-->
+
+    <!--inicio de la section 3-->
+    <div class="section1_3-3">
+        <div class="container3">
+            <div class="info">
+                <h1>Estandares</h1>
+                <p>Los estándares abiertos fomentan la interoperabilidad, la competencia y la innovación. 
+                    Las organizaciones de estandarización generalmente son organizaciones sin fines de lucro y neutrales en lo que respecta a proveedores, que se establecen para desarrollar y promover el concepto de estándares abiertos.
+                    
+
+                </p>
+            </div>
+
+            <div class="img-5-1-1">
+                <img src="estadares.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!--fin de la section 3-->
+
+      <!--inicio de la section 4-->
+      <div class="container-text5-2">
+        <div class="text5-2">
+            <p>
+
+            <h1>Estándares de Internet</h1>
+            
+            </p>
+            <p> Sociedad de Internet (ISOC): promueve el desarrollo y la evolución abiertos del uso de Internet en todo el mundo. 
+                <br><br>
+                •	Consejo de Arquitectura de Internet (IAB): administra y desarrolla los estándares de Internet. <br><br>
+                •	Grupo de trabajo de ingeniería de Internet (IEFT): desarrolla, actualiza y mantiene las tecnologías de Internet y de TCP/IP. <br><br>
+                •	Grupo de trabajo de investigación de Internet (IRTF): está enfocado en la investigación a largo plazo en relación con los protocolos de Internet y TCP/IP.
+                <br><br>
+                •	Autoridad de Números Asignados de Internet (IANA): administra la asignación de direcciones IP, la administración de nombres de dominio y los identificadores de protocolos para ICANN.
+            </p>
+
+        </div>
+    </div>
+    <!--fin de la section 4-->
+
+     <!--inicio de la section 5-->
+  <div class="section1_3-4">
+    <div class="container4">
+        <div class="img-5-1-4">
+            <img src="organizacionesestadares.png" alt="">
+        </div>
+
+
+        <div class="info2">
+            <h1>Organizaciones De Estándares De Comunicaciones</h1>
+            <br>
+            <p>•  Instituto de Ingenieros Eléctricos y Electrónicos (IEEE): dedicado a avanzar en innovación tecnológica y a elaborar estándares en una amplia gama de sectores, que incluyen redes. </p>
+            
+            <p> • Asociación de Industrias Electrónicas (EIA): estándares relacionados con el cableado eléctrico, los conectores y los racks de red. 
+                <br><br>
+                •	Asociación de las Industrias de las Telecomunicaciones (TIA): estándares para equipos de radio, torres de telefonía móvil, dispositivos de voz sobre IP (VoIP) y comunicaciones satelitales.
+                <br><br>
+                •  Sector de Normalización de las Telecomunicaciones de la Unión Internacional de Telecomunicaciones (ITU-T): estándares para la compresión de videos, televisión de protocolo de Internet (IPTV) y comunicaciones de banda ancha.
+              <br><br>
+     
+
+              Por: Jose Angel Lopez Bautista
+              <br></br>
+              Referencias:
+              <br><br>
+              <a href="">https://ceabad.com/2020/05/11/estandarizacion-y-normalizacion-de-las-telecomunicaciones/</a>
+             
+            
+              
+              
+            </p>
+                      
+        </div>
+
+    </div>
+
+</div>
+
+<!--fin de la section 5-->
+
+ <!--PARTE DEL FOOTER-->
+
+ <footer>
+
+    <div class="container__footer">
+        <div class="box__footer">
+            <div class="logo">
+                <img src="Logotec.jpg" alt="">
+            </div>
+            <div class="terms">
+                <p>Instituto Tecnologico Superior De Poza Rica 2022.</p>
+            </div>
+        </div>
+        <div class="box__footer">
+
+        </div>
+
+        <div class="box__footer">
+            <h1>Integrantes</h1>
+            <p>Daniel Mendez Mendez</p>
+            <p>Kristen Aislyn Trejo Hernandez</p>
+            <p>Jose Armando Garcia Perez</p>
+            <p>Selina Yamilet Avendaño Maya</p>
+            <p>Jose Angel Lopez Bautista</p>
+            <p>Brian Ethel Hernandez Huerta</p>
+        </div>
+
+        <div class="box__footer">
+
+        </div>
+
+    </div>
+
+    <div class="box__copyright">
+        <hr>
+        <p>Todos los derechos reservados © 2022 <b>Daniel Mendez</b></p>
+    </div>
+</footer>
+
+<!--Fin del footer-->
+    
+    </main>
+</body>
+
+</html>
